@@ -1,0 +1,446 @@
+/*-------------------container--------------------*/
+.container {
+    width: 960px;
+    margin: auto;
+    background: lightgoldenrodyellow;
+    min-height: 1000px;
+}
+    /*-------------------header--------------------*/
+.container header {
+     background-color:aquamarine;
+     padding: 20px;
+     overflow: hidden;
+}
+.container header #logo a img {
+       width: 100px;
+}
+.container header #logo h1 {
+       float: right
+}
+    /*-------------------nav--------------------*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: red;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.show {
+    display: block;
+}
+    /*-------------------footer--------------------*/
+
+    .container .footer {
+        background: aquamarine;
+        height: 100px;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .container .footer span{
+    color: #333;
+    font-family: 'Merienda', cursive;
+    font-weight: normal;
+    }
+   
+   
+    /*-------------------page1--------------------*/
+    .container .body {
+        overflow: hidden
+    }
+
+        .container .body article {
+            width: 80%;
+            margin: auto;
+            padding: 5px;
+            background: white;
+            border: 3px solid aquamarine;
+            float: right;
+            height: 600px;
+        }
+        .page1{
+            margin: 50px 20%;
+            padding: 10px;
+            width: 500px;
+            height: 100px;
+            border: 5px double #29ADB2;
+        }
+        .page1 p{
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 10px;
+            font-family: cursive;
+            color: #29ADB2;
+        }
+/*-------------------page2--------------------*/
+
+.mySlides {
+    display: none
+}
+
+.img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+.page2 {
+    text-align: center;
+}
+
+.imge {
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+#prev {
+    left: 15%;
+    color: #fff;
+}
+
+#next {
+    left: 82%;
+    color: #fff;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+#caption {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+}
+#currentPage{
+    margin: auto;
+    font-family: 'Merienda', cursive;
+    font-weight: normal;
+    font-size: 15px;
+    background-color: #000;
+    padding: 20px;
+    width: fit-content;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    width: 100px; 
+    height: 100px;
+    margin: 10px; 
+  }
+/*   
+footer{
+    margin-top: -104px;
+    background: aquamarine;
+    height: 63px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 72.5%;
+    margin-left: 154px;
+}
+footer span{
+color: #333;
+font-family: 'Merienda', cursive;
+font-weight: normal;
+    } */
+
+   
+/*-------------------page3--------------------*/
+.body{
+    text-align: center;
+    padding: 20px;
+}
+
+   #imgdiv img {
+        /* width: 600px;
+        height: 400px; */
+        width: 50%;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+#btns {
+    padding: 20px;
+}
+
+    #btns button {
+        margin: 20px;
+        width: 20%;
+        height: 50px;
+        background-color: darkseagreen;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+/*-------------------page4--------------------*/
+.container .Receipt {
+    overflow: hidden;
+    padding: 20px;
+}
+
+#f1 {
+    margin: 10px 25%;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+    #f1 input {
+
+        width: 45%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        resize: vertical;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        float: left;
+        margin: 5px;
+    }
+
+    #product {
+        width: 48%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        resize: vertical;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        float: left;
+        margin: 5px;
+    }
+
+#TotalPrice {
+    color: red;
+    font-size: 30px;
+    text-align: center
+}
+#btn{
+    margin: 20px 40%;
+    width: 20%;
+    height: 50px;
+    background-color: darkseagreen;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+#print{
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+/*-------------------page5--------------------*/
+#myInput {
+    background-image: url("../images/pic_bulbon.gif");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #29ADB2;
+    font-size: 18px;
+}
+
+    #myTable th, #myTable td {
+        text-align: left;
+        padding: 12px;
+    }
+
+    #myTable tr {
+        border-bottom: 1px solid #29ADB2;
+    }
+
+        #myTable tr.header, #myTable tr:hover {
+            background-color: #29ADB2;
+            color: #fff;
+        }
+
+#searchInput{
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 30px;
+}

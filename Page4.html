@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+   <script src="js/JavaScript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <a href="HomePage.html">
+                    <img src="images/logo.png" alt="site logo">
+                    <h1> Welcome to DELL website</h1>
+                </a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <a href="Page1.html">Page1</a>
+            <a href="Page2.html">Page2</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                    Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="Page4.html">Page3</a>
+            <a href="Page4.html">Page4</a>
+            <a href="Page5.html">Page5</a>
+        </nav>
+        <table id="mytable" width="90%" style="text-align:center; border:2px solid #000;margin: 15px auto;padding-bottom: 50px;">
+            <tr>
+                <td>product</td>
+                <td>price</td>
+            </tr>
+        </table>
+        
+        <form action="" id="f1" >
+            <select name="product" id="product">
+                <option selected disabled>--choose the product--</option>
+                <option value="laptop" id="a">labtop</option>
+                <option value="keyboard" id="b">keyboard</option>
+                <option value="mobile" id="c">mobile</option>
+                <option value="tablet" id="d">tablet</option>
+            </select>
+            <input type="text" id="prc" placeholder="price">
+        </form>
+        <button onclick="receipt()" id="btn">receipt</button> 
+        <div id="print"></div>  
+        <footer class="footer">
+            <p>developed by <span>Zainab</span></p>
+        </footer>
+    </div>
+</body>
+</html>
